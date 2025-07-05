@@ -16,7 +16,7 @@ public class Main {
                 String lastName = rs.getString("last_name");
                 int age = rs.getInt("age");
 
-                System.out.println(id + ": " + firstName + " " + lastName + ", age " + age);
+                System.out.println(firstName + " " + lastName + ", age " + age);
             }
 
         } catch (SQLException e) {
