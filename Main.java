@@ -11,12 +11,18 @@ public class Main {
             ResultSet rs = stmt.executeQuery("SELECT * FROM Students");
 
             while (rs.next()) {
-                int id = rs.getInt("student_id");
                 String firstName = rs.getString("first_name");
                 String lastName = rs.getString("last_name");
                 int age = rs.getInt("age");
 
                 System.out.println(firstName + " " + lastName + ", age " + age);
+            }
+            Statement stmt1 = conn.createStatement();
+            ResultSet rs1 = stmt1.executeQuery("SELECT * FROM Courses");
+
+            while (rs1.next()) {
+                String Name = rs1.getString("course_name");
+                System.out.println(Name);
             }
 
         } catch (SQLException e) {
