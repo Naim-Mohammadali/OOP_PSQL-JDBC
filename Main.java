@@ -20,7 +20,7 @@ public class Main {
             }
 
         } catch (SQLException e) {
-            System.out.println("hi!");
+            e.printStackTrace();
         }
     }
 }

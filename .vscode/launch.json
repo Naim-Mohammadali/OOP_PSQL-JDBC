@@ -7,6 +7,7 @@
       "request": "launch",
       "mainClass": "Main",
       "classPaths": [
+        "${workspaceFolder}/bin",
         "${workspaceFolder}/postgresql-42.7.7.jar"
       ],
       "modulePaths": ["${workspaceFolder}/bin"
