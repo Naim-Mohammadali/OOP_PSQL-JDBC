@@ -1,6 +1,7 @@
 {
   "version": "0.2.0",
   "configurations": [
+    
     {
       "type": "java",
       "name": "Run Main with PostgreSQL Driver",
@@ -8,11 +9,9 @@
       "mainClass": "Main",
       "classPaths": [
         "${workspaceFolder}/bin",
-        "${workspaceFolder}/postgresql-42.7.7.jar"
-      ],
-      "modulePaths": ["${workspaceFolder}/bin"
-    ]
-
+        "${workspaceFolder}/lib/postgresql-42.7.7.jar"
+      ]
     }
   ]
 }
+// This configuration is for running a Java application with the PostgreSQL JDBC driver.

@@ -1,5 +1,4 @@
 import java.sql.*;
-
 public class Main {
     public static void main(String[] args) {
         String url = "jdbc:postgresql://localhost:5432/postgres";
@@ -24,7 +23,6 @@ public class Main {
                 String Name = rs1.getString("course_name");
                 System.out.println(Name);
             }
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
